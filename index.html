@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sample</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="js/jquery.js"></script>	
+    <script src="js/sticky.js"></script>
+    <script src="js/pagetop.js"></script>
+    <script src="js/menulink.js"></script>
+    <script>
+      $(document).ready(function(){
+      	$(".slider-change").click(function(){
+      		$(".imgholder").removeClass().addClass("imgholder "+this.id)
+      	});
+            });
+    </script>
+	<script>
+	$(document).ready(function() {
+	var stickyNavTop = $('.head').offset().top;
+	var stickyNav = function(){
+	var scrollTop = $(window).scrollTop();
+    if (scrollTop > stickyNavTop) { 
+	$('.head').addClass('sticky');
+	} else {
+	$('.head').removeClass('sticky'); 
+	}
+	};
+	stickyNav();
+	$(window).scroll(function() {
+	stickyNav();
+	});
+	});
+	</script>
+  </head>
+  <body>
+  <div class="com banner">
+        <div class="bannerdiv"></div>
+        <div class="fadeindiv">
+          <p>Be Calm</p>
+        </div>
+      </div>
+    <div class="com head">
+      <div class="hwrap">
+        <div class="logo">
+			<!--<img src="img/logos/download.jpg" alt="headlogo" style="max-width:100%;">-->
+			<h1><a href="#">JH</a></h1>
+        </div>
+        <div class="navdiv">
+          <ul class="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#link1">About Us</a></li>
+            <li><a href="#link2">Service</a></li>
+            <li><a href="#link3">Portfolio</a></li>
+            <li><a href="#link4">Contant</a></li>
+          </ul>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+   
+      
+      <div class="com stickydiv">
+        <!--<div class="instickydiv">
+          <p><a href="#">OUR OTHER SITES</a></p>
+          </div>-->
+      </div>
+      <div class="com socialmedia " id="link1">
+        <div class="smcontent">
+          <div class="subheadingsdiv">
+            <p class="subheadings">About Us</p>
+            <p class="subheadings1">Pellentesque habitant morbi tristique senectus et netus et malesuada</p>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+      <div class="com projdisplay">
+        <div class="proj">
+          <div class="projbor">
+            <div class="watvr">
+              <p class="parahead">What we are</p>
+              <p class="parahead1">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
+            </div>
+            <div class="ourskills">
+              <div class="ourskillshead">
+                <p>Our Skills</p>
+              </div>
+              <div class="scale1">
+                <div class="scaleclr1">
+                  <p>HTML/CSS</p>
+                </div>
+              </div>
+              <div class="scale2">
+                <div class="scaleclr2">
+                  <p>PHP</p>
+                </div>
+              </div>
+              <div class="scale3">
+                <div class="scaleclr3">
+                  <p>JAVA</p>
+                </div>
+              </div>
+              <div class="scale4">
+                <div class="scaleclr4">
+                  <p>Python</p>
+                </div>
+              </div>
+              <div class="scale5">
+                <div class="scaleclr5">
+                  <p>Ruby</p>
+                </div>
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+      <div class="com socialmedia" id="link2">
+        <div class="smcontent">
+          <div class="subheadingsdiv">
+            <p class="subheadings">Services</p>
+            <p class="subheadings1">Pellentesque habitant morbi tristique senectus et netus et malesuada</p>
+          </div>
+        </div>
+      </div>
+      <div class="com projdisplay">
+        <div class="proj">
+          <div class="projbor" >
+            <div class="wattodo">
+              <p class="subheadings" style="color:rgb(52,73,94);">What we do</p>
+              <p class="subheadings1" style="color:rgb(52,73,94);">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            </div>
+            <div class="platforms1">
+              <div class="platname">
+                <div class="winlogo">
+                  <img src="img/windows-logo-silhouette.png" alt="logos" style="margin:15px 0 0 18px;">
+                </div>
+                <div class="wintext">
+                  <p class="subheadings" style="color:rgb(52,73,94);">Windows Development</p>
+                  <p class="subheadings1" style="color:rgb(52,73,94);">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <div class="platname">
+                <div class="winlogo">
+                  <img src="img/android-logo.png" alt="logos" style="margin:15px 0 0 18px;">
+                </div>
+                <div class="wintext">
+                  <p class="subheadings" style="color:rgb(52,73,94);">Android Development</p>
+                  <p class="subheadings1" style="color:rgb(52,73,94);">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <div class="platname">
+                <div class="winlogo">
+                  <img src="img/apple.png" alt="logos" style="margin:15px 0 0 18px;">
+                </div>
+                <div class="wintext">
+                  <p class="subheadings" style="color:rgb(52,73,94);">ios Development</p>
+                  <p class="subheadings1" style="color:rgb(52,73,94);">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <div class="clear"></div>
+            </div>
+            <div class="platforms2">
+              <div class="platname">
+                <div class="winlogo">
+                  <img src="img/apple.png" alt="logos" style="margin:15px 0 0 18px;">
+                </div>
+                <div class="wintext">
+                  <p class="subheadings" style="color:rgb(52,73,94);">ios Development</p>
+                  <p class="subheadings1"style="color:rgb(52,73,94);">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <div class="platname">
+                <div class="winlogo">
+                  <img src="img/apple.png" alt="logos" style="margin:15px 0 0 18px;">
+                </div>
+                <div class="wintext">
+                  <p class="subheadings" style="color:rgb(52,73,94);">ios Development</p>
+                  <p class="subheadings1"style="color:rgb(52,73,94);">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <div class="platname">
+                <div class="winlogo">
+                  <img src="img/apple.png" alt="logos" style="margin:15px 0 0 18px;">
+                </div>
+                <div class="wintext">
+                  <p class="subheadings" style="color:rgb(52,73,94);">ios Development</p>
+                  <p class="subheadings1" style="color:rgb(52,73,94);">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="com socialmedia" id="link3">
+        <div class="smcontent">
+          <div class="subheadingsdiv">
+            <p class="subheadings">Portfolio</p>
+            <p class="subheadings1">Pellentesque habitant morbi tristique senectus et netus et malesuada</p>
+          </div>
+        </div>
+      </div>
+      <div class="com projdisplay">
+        <div class="proj1">
+          <div class="proj1divs">
+            <img src="img/portfolio/thumb/item1.jpg" alt="portphotos">
+          </div>
+          <div class="proj1divs">
+            <img src="img/portfolio/thumb/item2.jpg" alt="portphotos">
+          </div>
+          <div class="proj1divs">
+            <img src="img/portfolio/thumb/item3.jpg" alt="portphotos">
+          </div>
+          <div class="proj1divs">
+            <img src="img/portfolio/thumb/item4.jpg" alt="portphotos">
+          </div>
+          <div class="proj1divs">
+            <img src="img/portfolio/thumb/item5.jpg" alt="portphotos">
+          </div>
+          <div class="proj1divs">
+            <img src="img/portfolio/thumb/item6.jpg" alt="portphotos">
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+      <div class="com details" id="link4">
+        <div class="detailsdiv">
+          <div class="detailsdiv1">
+            <h4>About Us</h4>
+            <p  class="cat1">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p>
+          </div>
+          <div class="detailsdiv2">
+            <h4>Company</h4>
+            <ul>
+              <li>Company Overview</li>
+              <li>Meet The Team</li>
+              <li>Our Awesome Partners</li>
+              <li>Our Services</li>
+              <li>Conatct Us</li>
+              <li>Company Overview</li>
+              <li>Meet The Team</li>
+              <li>Our Awesome Partners</li>
+              <li>Our Services</li>
+              <li>Conatct Us</li>
+            </ul>
+          </div>
+          <div class="detailsdiv3">
+            <h4>Latest Blog</h4>
+            <div class="imgcontent1">
+              <div class="thumbimg1">
+                <img src="img\blog\thumb1.jpg" alt="thumb1">
+              </div>
+              <div class="thumbimg1cont">
+                <p>Pellentesque habitant morbi tristique senectus</p>
+              </div>
+              <div class="clear"></div>
+            </div>
+            <div class="imgcontent1">
+              <div class="thumbimg1">
+                <img src="img\blog\thumb1.jpg" alt="thumb1">
+              </div>
+              <div class="thumbimg1cont">
+                <p>Pellentesque habitant morbi tristique senectus</p>
+              </div>
+              <div class="clear"></div>
+            </div>
+            <div class="imgcontent1">
+              <div class="thumbimg1">
+                <img src="img\blog\thumb1.jpg" alt="thumb1">
+              </div>
+              <div class="thumbimg1cont">
+                <p>Pellentesque habitant morbi tristique senectus</p>
+              </div>
+              <div class="clear"></div>
+            </div>
+          </div>
+          <div class="detailsdiv4">
+            <h4>Address</h4>
+            <p>Twitter, Inc.
+              795 Folsom Ave, <br>Suite 600
+              San Francisco,<br> CA 94107
+              P: (123) 456-7890 
+            </p>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+      <div class="com footer">
+        <div class="infooter">
+          <div class="rightsreserved">
+            <p> © 2013 ShapeBootstrap. All Rights Reserved.</p>
+          </div>
+          <div class="bottommenu">
+            <ul>
+              <li>Home</li>
+              <li>About Us</li>
+              <li>Faq</li>
+              <li>Contact Us</li>
+            </ul>
+            <img class="clickme" src="up-arrow.png" alt="angleup" style="margin-left:15px;">
+          </div>
+        </div>
+      </div>
+   
+  </body>
+</html>
